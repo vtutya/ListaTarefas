@@ -31,6 +31,14 @@ public class GerenciadorDeTarefas {
                 System.out.println(t);
             }
         }
-
     }
-}
+    public Tarefa buscarPeloTitulo(String titulo) {
+            for(Tarefa t: listaTarefa){
+                if(t.getTitulo().equals(titulo)){
+                    return t;
+                }
+            }
+            return null;
+        }
+    }
+

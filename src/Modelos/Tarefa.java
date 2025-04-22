@@ -22,6 +22,10 @@ public class Tarefa {
         this.concluida = true;
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
     @Override
     public String toString() {
         return "Tarefa:" + titulo + "\n" +
